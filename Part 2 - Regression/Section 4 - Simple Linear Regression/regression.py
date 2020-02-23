@@ -24,12 +24,15 @@ y= dataset.iloc[:,1].values
 
 
 # spliting dataset to training and test set
-
 from sklearn.model_selection import train_test_split
 x_train,x_test, y_train,y_test= train_test_split(x,y, test_size=1/3, random_state=0)
 
 
-# no need for feature scaling as lilbrary takes care of it automatically
+
+
+'''
+no need for feature scaling as lilbrary takes care of it automatically
+'''
 
 #Fitting Simpe Linear Regression to Training set
 from sklearn.linear_model import LinearRegression
@@ -57,6 +60,8 @@ plt.title('salary vs Experience(Training set)')
 plt.xlabel('year of exp')
 plt.ylabel('salary')
 plt.show()
+
+
          
 
 
